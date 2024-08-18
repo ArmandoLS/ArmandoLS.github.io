@@ -1,82 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fichas Interactivas</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome CDN Link for Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>Nombre del sitio 📚</h1>
+        <nav>
+            <a href="#">Categoria 1</a>
+            <a href="#">Categoria 2</a>
+            <a href="#">Categoria 3</a>
+        </nav>
 
-  <!-- botón de inicio de prueba -->
-  <div class="start_btn"><button>Iniciar prueba</button></div>
-
-  <!-- Caja de Informacion-->
-  <div class="info_box">
-      <div class="info-title"><span>Algunas reglas de este cuestionario</span></div>
-      <div class="info-list">
-          <div class="info">1. Tendrás solo <span>20 segundos</span> por cada pregunta.</div>
-          <div class="info">2. Una vez que seleccione su respuesta, no se puede deshacer.</div>
-          <div class="info">3. No puede seleccionar ninguna opción una vez que se acaba el tiempo.</div>
-          <div class="info">4. No puedes salir del Quiz mientras estás jugando.</div>
-          <div class="info">5. Obtendrás puntos en base a tus respuestas correctas.</div>
-      </div>
-      <div class="buttons">
-          <button class="quit">Salir del Cuestionario</button>
-          <button class="restart">Continuar</button>
-      </div>
-  </div>
-
-  <!-- Cuadro de prueba-->
-  <div class="quiz_box">
-      <header>
-          <div class="title">Examen de Programación</div>
-          <div class="timer">
-              <div class="time_left_txt">Tiempo restante</div>
-              <div class="timer_sec">20</div>
-          </div>
-          <div class="time_line"></div>
-      </header>
-      <section>
-          <div class="que_text">
-              <!-- Aquí he insertado una pregunta de JavaScript -->
-          </div>
-          <div class="option_list">
-              <!-- Aquí he insertado opciones de JavaScript -->
-          </div>
-      </section>
-
-      <!-- pie de página de la prueba -->
-      <footer>
-          <div class="total_que">
-              <!-- Aquí he insertado Número de conteo de preguntas de JavaScript -->
-          </div>
-          <button class="next_btn">Siguiente</button>
-      </footer>
-  </div>
-
-  <!-- Result Box -->
-  <div class="result_box">
-      <div class="icon">
-          <img src="https://telegra.ph/file/fd2d3dd1da59444cd8e01.png" class="avatar" alt="">
-      </div>
-      <div class="complete_text">¡Has completado el cuestionario!</div>
-      <div class="score_text">
-          <!-- Aquí he insertado Score Result de JavaScript-->
-      </div>
-      <div class="buttons">
-          <button class="restart">Cuestionario de repetición</button>
-          <button class="quit">Salir</button>
-      </div>
-  </div>
-
-  <!-- Dentro de este archivo JavaScript, solo he insertado preguntas y opciones. -->
-  <script src="preguntas.js"></script>
-
-  <!-- Dentro de este archivo JavaScript he codificado todos los códigos de prueba -->
-  <script src="script.js"></script>
+    </header>
+    <main>
+        <h2>Fichas Interactivas</h2>
+        <!-- Barra de búsqueda dentro de la tabla -->
+        <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Buscar en la tabla...">
+        <table id="interactiveTable">
+            <thead>
+                <tr>
+                    <th>Tema</th>
+                    <th>Fichas</th>
+                    <th>Visualizar</th>
+                    <th>Descargar</th>
+                    <th>Test</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mat. Básicas</td>
+                    <td>Intro a álgebra</td>
+                    <td><a href="#">Ver</a></td>
+                    <td><a href="pdf.html">Descargar</a></td>
+                    <td><a href="test.html">Tomar Test</a></td>
+                    <td>Muchos comentarios</td>
+                </tr>
+                <tr>
+                    <td>Ciencias Naturales</td>
+                    <td>Ciclo del agua</td>
+                    <td><a href="#">Ver</a></td>
+                    <td><a href="pdf.html">Descargar</a></td>
+                    <td><a href="test.html">Tomar Test</a></td>
+                    <td>Muchos comentarios</td>
+                </tr>
+                <tr>
+                    <td>Historia</td>
+                    <td>Revolución Francesa</td>
+                    <td><a href="#">Ver</a></td>
+                    <td><a href="pdf.html">Descargar</a></td>
+                    <td><a href="test.html">Tomar Test</a></td>
+                    <td>Algunos comentarios</td>
+                </tr>
+                <tr>
+                    <td>Ciencias Naturales</td>
+                    <td>Ciclo del agua</td>
+                    <td><a href="#">Ver</a></td>
+                    <td><a href="pdf.html">Descargar</a></td>
+                    <td><a href="test.html">Tomar Test</a></td>
+                    <td>Muchos comentarios</td>
+                </tr>
+                <tr>
+                    <td>Historia</td>
+                    <td>Revolución Francesa</td>
+                    <td><a href="#">Ver</a></td>
+                    <td><a href="pdf.html">Descargar</a></td>
+                    <td><a href="test.html">Tomar Test</a></td>
+                    <td>Algunos comentarios</td>
+                </tr>
+                <!-- Añade más filas según sea necesario -->
+            </tbody>
+        </table>
+    </main>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
