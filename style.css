@@ -1,3 +1,4 @@
+/* Estilos base */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -13,12 +14,20 @@ header {
     justify-content: space-between;
     align-items: center;
     color: white;
+    flex-wrap: wrap;
 }
 
 header h1 {
     margin: 0;
     font-size: 28px;
     color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
 }
 
 nav a {
@@ -48,6 +57,7 @@ nav a {
     cursor: pointer;
 }
 
+/* Estilos para el contenido principal */
 main {
     padding: 20px;
     background-color: white;
@@ -94,6 +104,7 @@ td a:hover {
     text-decoration: underline;
 }
 
+/* Estilos para el footer */
 footer {
     background-color: #004643; /* Verde oscuro */
     padding: 20px;
@@ -126,4 +137,73 @@ footer .newsletter button {
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+        order: -1;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .search-bar input[type="text"],
+    .search-bar button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
 }
